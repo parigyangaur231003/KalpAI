@@ -1,0 +1,48 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+langchain = "*"
+groq = "*"
+nomic = "*"
+sentence-transformers = "*"
+faiss-cpu = "*"
+pymupdf = "*"
+pandas = "*"
+numpy = "*"
+openai = "*"
+tqdm = "*"
+langchain-groq = "*"
+deepface = "*"
+langchain-community = "*"
+tf-keras = "*"
+pyttsx3 = "*"
+requests = "*"
+langchain-ollama = "*"
+pypdf = "*"
+textblob = "*"
+opencv-python = "*"
+pillow = "*"
+pygame = "*"
+sounddevice = "*"
+scipy = "*"
+gtts = "*"
+playsound = "*"
+speechrecognition = "*"
+python-dotenv = "*"
+elevenlabs = "==0.2.27"
+langdetect = "*"
+fastapi = "*"
+pydantic = "*"
+pydub = "*"
+streamlit-webrtc = "==0.46.0"
+gradio = ">=4.27.0"
+nrclex = "*"
+nltk = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
