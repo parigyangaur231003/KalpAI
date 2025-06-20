@@ -139,6 +139,8 @@ st.markdown("""
         color: white !important;
         height: 100vh;
         overflow-x: hidden;
+        margin: 0 !important;
+        padding: 0 !important;
     }
     .stButton > button {
         background-color: #1a1a1a;
@@ -169,11 +171,26 @@ st.markdown("""
         0% { transform: scale(0.9); opacity: 1; }
         100% { transform: scale(1.2); opacity: 0; }
     }
+    #kalp-logo {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 9999;
+    }
 </style>
 """, unsafe_allow_html=True)
 
 # === Header UI ===
-st.image("kalp.gif", use_container_width=True)
+col1, col2 = st.columns([1, 8])
+with col1:
+    st.image("logo.png", width=90)
+with col2:
+    st.image("kalp.gif", use_container_width=True)
+
+# === Logo at Top Left Corner ===
+st.markdown("""
+<img id='kalp-logo' src='logo.png' width='90'>
+""", unsafe_allow_html=True)
 
 # === App Flow ===
 if "conversation_active" not in st.session_state:
